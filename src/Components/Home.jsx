@@ -6,7 +6,21 @@ import { useEffect, useState } from "react";
 
 const Home = () => {
   const engineers = useLoaderData();
+
   const [categorys, setCategorys] = useState([]);
+  const [engineer, setEngineer] = useState([]);
+  const [btnShow, setBtnShow] = useState(false);
+
+  useEffect(() => {
+    const cutting = engineers.slice(0, 6);
+    setEngineer(cutting);
+    setBtnShow(true);
+  }, [engineers]);
+
+  const showAllData = () => {
+    setEngineer(engineers);
+    setBtnShow(false);
+  };
 
   useEffect(() => {
     fetch("jobs.json")
@@ -18,7 +32,12 @@ const Home = () => {
     <>
       <Hero />
       <Jobs categorys={categorys} />
-      <Engineer engineers={engineers} />
+      <Engineer engineer={engineer} />
+      <div className="text-center my-8">
+        <button onClick={showAllData} className={btnShow ? "btn2" : "hidden"}>
+          See All Jobs
+        </button>
+      </div>
     </>
   );
 };
