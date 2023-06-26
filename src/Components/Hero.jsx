@@ -3,7 +3,7 @@ const Hero = () => {
     <div className="bg-slate-200 px-4  py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
       <div className=" md:py-20 md:pl-48 ">
         <h1 className="text-5xl font-semibold">Find great engineer to work</h1>
-        <p className="text-xl my-4">
+        <p className="text-xl my-3">
           Get access to millions of engineer reviews
         </p>
         <div className="flex items-center gap-2">

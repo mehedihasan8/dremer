@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Web Developer",
+    "img": "./accounts 1.png",
+    "availableNumber": 200
+  },
+  {
+    "id": 2,
+    "title": "Sales Representative",
+    "img": "./social-media 1.png",
+    "availableNumber": 102
+  },
+  {
+    "id": 3,
+    "title": "Accountant",
+    "img": "./business 1.png",
+    "availableNumber": 850
+  },
+  {
+    "id": 4,
+    "title": "Graphic Designer",
+    "img": "./chip 1.png",
+    "availableNumber": 90
+  }
+]

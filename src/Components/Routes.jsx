@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "./Main";
-import Hero from "./Hero";
+import Home from "./Home";
 
 const router = createBrowserRouter([
   {
@@ -10,7 +10,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Hero />,
+        element: <Home />,
+        loader: async () => await fetch("/user.json"),
       },
     ],
   },
