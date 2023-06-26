@@ -1,6 +1,9 @@
+import { useState } from "react";
 import EngineerCard from "./EngineerCard";
 
 const Engineer = ({ engineer }) => {
+  const [search, setSearch] = useState("");
+  console.log(search);
   return (
     <div>
       <h1 className="text-center text-4xl font-bold mt-20 mb-2 font-mono">
@@ -11,24 +14,37 @@ const Engineer = ({ engineer }) => {
         need. Its your future
       </p>
       <div className="flex items-center justify-center gap-2 mt-10 mb-12">
-        {/* <div className="flex flex-col">
-          <label htmlFor="">
-            <span className="text-lg font-semibold mb-4">
-              Engineer name or job title
-            </span>
-          </label>
-        </div> */}
         <input
           type="text"
+          onChange={(e) => setSearch(e.target.value)}
           placeholder="Search by engineer name or job title"
           className="input  border-2 border-[#c084fc]  md:w-[600px]"
         />
         <button className="btn2 mt-1 ">Find Engineer</button>
       </div>
       <div className="grid lg:grid-cols-3 gap-6  px-4">
-        {engineer.map((enginee) => (
-          <EngineerCard key={enginee.id} enginee={enginee}></EngineerCard>
-        ))}
+        {/* {engineer
+          .filter((enginee) => {
+            return search.toLowerCase() === ""
+              ? enginee
+              : enginee.name.toLowerCase().includes(search) &&
+                  enginee.job_title.toLowerCase().includes(search);
+          })
+          .map((enginee) => (
+            <EngineerCard key={enginee.id} enginee={enginee}></EngineerCard>
+          ))} */}
+        {engineer
+          .filter((enginee) => {
+            const lowercaseSearch = search.toLowerCase();
+            return (
+              lowercaseSearch === "" ||
+              enginee.name.toLowerCase().includes(lowercaseSearch) ||
+              enginee.job_title.toLowerCase().includes(lowercaseSearch)
+            );
+          })
+          .map((enginee) => (
+            <EngineerCard key={enginee.id} enginee={enginee} />
+          ))}
       </div>
     </div>
   );

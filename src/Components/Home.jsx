@@ -33,7 +33,7 @@ const Home = () => {
       <Hero />
       <Jobs categorys={categorys} />
       <Engineer engineer={engineer} />
-      <div className="text-center my-8">
+      <div className="text-center my-16">
         <button onClick={showAllData} className={btnShow ? "btn2" : "hidden"}>
           See All Jobs
         </button>
