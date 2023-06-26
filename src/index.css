@@ -5,7 +5,15 @@
 @tailwind utilities;
 
 .btn2 {
-  @apply inline-flex items-center h-11  px-6 mb-1 font-medium text-white transition duration-200 rounded shadow-md border-none  bg-gradient-to-r from-blue-300 to-purple-500 hover:from-purple-500 hover:to-blue-300;
+  @apply inline-flex items-center h-11  px-6 mb-1 font-medium text-white transition duration-200 rounded shadow-md border-none  text-center bg-gradient-to-r from-blue-300 to-purple-500 hover:from-purple-500 hover:to-blue-300;
+}
+
+.active {
+  @apply font-medium tracking-wide text-[#C084FC] transition-colors duration-200 hover:text-[#C084FC];
+}
+
+.default {
+  @apply font-medium tracking-wide text-white transition-colors duration-200 hover:text-[#C084FC];
 }
 
 @layer base {
