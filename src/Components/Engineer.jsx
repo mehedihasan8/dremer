@@ -3,7 +3,17 @@ import EngineerCard from "./EngineerCard";
 
 const Engineer = ({ engineer }) => {
   const [search, setSearch] = useState("");
-  console.log(search);
+  //   console.log(search);
+
+  const filteredEngineers = engineer.filter((enginee) => {
+    const lowercaseSearch = search.toLowerCase();
+    return (
+      lowercaseSearch === "" ||
+      enginee.name.toLowerCase().includes(lowercaseSearch) ||
+      enginee.job_title.toLowerCase().includes(lowercaseSearch)
+    );
+  });
+
   return (
     <div>
       <h1 className="text-center text-4xl font-bold mt-20 mb-2 font-mono">
@@ -22,7 +32,7 @@ const Engineer = ({ engineer }) => {
         />
         <button className="btn2 mt-1 ">Find Engineer</button>
       </div>
-      <div className="grid lg:grid-cols-3 gap-6  px-4">
+      <div>
         {/* {engineer
           .filter((enginee) => {
             return search.toLowerCase() === ""
@@ -33,7 +43,7 @@ const Engineer = ({ engineer }) => {
           .map((enginee) => (
             <EngineerCard key={enginee.id} enginee={enginee}></EngineerCard>
           ))} */}
-        {engineer
+        {/* {engineer
           .filter((enginee) => {
             const lowercaseSearch = search.toLowerCase();
             return (
@@ -44,7 +54,18 @@ const Engineer = ({ engineer }) => {
           })
           .map((enginee) => (
             <EngineerCard key={enginee.id} enginee={enginee} />
-          ))}
+          ))} */}
+        {filteredEngineers.length === 0 ? (
+          <p className="text-center text-red-400 text-xl my-24">
+            No found Any Result. Please Provide Current Info
+          </p>
+        ) : (
+          <div className="grid lg:grid-cols-3 gap-6  px-4">
+            {filteredEngineers.map((enginee) => (
+              <EngineerCard key={enginee.id} enginee={enginee} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
