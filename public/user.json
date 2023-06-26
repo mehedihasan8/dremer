@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "John Smith",
+    "image": "john_smith.jpg",
+    "job_title": "Front End Developer",
+    "experience": "5 years",
+    "location": "New York",
+    "education": "Bachelor's degree in Computer Science",
+    "ranking": 4.5
+  },
+  {
+    "id": 2,
+    "name": "Sarah Johnson",
+    "image": "sarah_johnson.jpg",
+    "job_title": "Back End Developer",
+    "experience": "8 years",
+    "location": "London",
+    "education": "Bachelor's degree in Computer Science",
+    "ranking": 4.2
+  },
+  {
+    "id": 3,
+    "name": "Michael Lee",
+    "image": "michael_lee.jpg",
+    "job_title": "React Developer",
+    "experience": "3 years",
+    "location": "San Francisco",
+    "education": "Bachelor's degree in Computer Science",
+    "ranking": 4.8
+  },
+  {
+    "id": 4,
+    "name": "Emily Chen",
+    "image": "emily_chen.jpg",
+    "job_title": "JavaScript Developer",
+    "experience": "6 years",
+    "location": "Toronto",
+    "education": "Bachelor's degree in Computer Science",
+    "ranking": 4.6
+  },
+  {
+    "id": 5,
+    "name": "David Rodriguez",
+    "image": "david_rodriguez.jpg",
+    "job_title": "MERN Stack Developer",
+    "experience": "4 years",
+    "location": "Madrid",
+    "education": "Bachelor's degree in Computer Science",
+    "ranking": 4.7
+  },
+  {
+    "id": 6,
+    "name": "Emma Wilson",
+    "image": "emma_wilson.jpg",
+    "job_title": "Front End Developer",
+    "experience": "10 years",
+    "location": "Sydney",
+    "education": "Bachelor's degree in Computer Science",
+    "ranking": 4.3
+  },
+  {
+    "id": 7,
+    "name": "Daniel Kim",
+    "image": "daniel_kim.jpg",
+    "job_title": "Back End Developer",
+    "experience": "2 years",
+    "location": "Seoul",
+    "education": "Bachelor's degree in Computer Science",
+    "ranking": 4.1
+  },
+  {
+    "id": 8,
+    "name": "Olivia Davis",
+    "image": "olivia_davis.jpg",
+    "job_title": "React Developer",
+    "experience": "7 years",
+    "location": "Berlin",
+    "education": "Bachelor's degree in Computer Science",
+    "ranking": 4.9
+  },
+  {
+    "id": 9,
+    "name": "Ethan Thompson",
+    "image": "ethan_thompson.jpg",
+    "job_title": "JavaScript Developer",
+    "experience": "4 years",
+    "location": "Melbourne",
+    "education": "Bachelor's degree in Computer Science",
+    "ranking": 4.4
+  },
+  {
+    "id": 10,
+    "name": "Sophia Garcia",
+    "image": "sophia_garcia.jpg",
+    "job_title": "MERN Stack Developer",
+    "experience": "9 years",
+    "location": "Mexico City",
+    "education": "Bachelor's degree in Computer Science",
+    "ranking": 4.7
+  }
+]

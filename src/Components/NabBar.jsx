@@ -1,8 +1,10 @@
 const NabBar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 shadow-md px-6 ">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">Dremer</a>
+        <span className="ml-2  text-xl sm:text-2xl  font-bold tracking-wide uppercase text-gray-800">
+          <span className=" text-purple-500">Dremer</span>
+        </span>
       </div>
       <div className="flex-none gap-2">
         <div className="form-control">
